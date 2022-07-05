@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# To contribute
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+$ git clone git@github.com:Titanic-London/artyourstory.js.git
+$ cd artyourstory.js
+```
+
+Edit any file...
+
+```
+$ git add --all
+$ git commit -m "test"
+$ git push`
+```
+
+# To run the website locally
+
+(make sure you `cd` in the project folder with terminal)
+
+```
+$ npm install
+$ npm run start
+```
 
 ## Available Scripts
 
