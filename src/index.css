@@ -7,3 +7,10 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+:root {
+  --brand-color: #525E75;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+}
