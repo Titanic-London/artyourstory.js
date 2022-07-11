@@ -1,0 +1,6 @@
+
+.navbar {
+  background-color: var(--brand-color);
+  padding: var(--spacing-m);
+  color: white;
+}
