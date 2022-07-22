@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
+import { Button } from "./Button";
+import { Text } from "./Text";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -48,7 +50,7 @@ function App() {
         return <div key={user.username}>{user.username}</div>;
       })}
 
-      <button
+      <Button
         onClick={() => {
           writeUserData(
             Math.floor(Math.random() * 100),
@@ -59,7 +61,9 @@ function App() {
         }}
       >
         Click me
-      </button>
+      </Button>
+      <Button type="primary">Primary button</Button>
+      <Button type="secondary">Secondary button</Button>
     </div>
   );
 }

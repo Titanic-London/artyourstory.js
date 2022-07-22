@@ -7,7 +7,7 @@ export function Text({ children, size, bold, color }) {
     <span
       className={classNames("text", {
         "text-s": size === "s",
-        "text-m": size === "m",
+        "text-m": size === "m" || size == null,
         "text-l": size === "l",
         "text-bold": bold === true,
         "text-color-primary": color === "primary" || color == null,

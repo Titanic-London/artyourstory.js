@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 html, body {
@@ -17,4 +18,7 @@ html, body {
   --text-color-secondary: #525E75;
   --text-color-subtle: #DDDDDD;
   --text-color-light: #fff;
+  --border-radius: 4px;
+  --background-color-primary: #fff;
+  --background-color-secondary: #DDDDDD;
 }
