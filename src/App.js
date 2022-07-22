@@ -3,7 +3,6 @@ import { getDatabase, ref, set, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import { Button } from "./Button";
-import { Text } from "./Text";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
