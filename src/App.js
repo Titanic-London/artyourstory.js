@@ -63,6 +63,7 @@ function App() {
       </Button>
       <Button type="primary">Primary button</Button>
       <Button type="secondary">Secondary button</Button>
+      <Button type="transparent">Transparent button</Button>
     </div>
   );
 }

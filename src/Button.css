@@ -22,3 +22,7 @@
   color: var(--text-color-primary);
   background-color: var(--background-color-secondary);
 }
+
+.btn-transparent {
+  color: var(--text-color-primary);
+}

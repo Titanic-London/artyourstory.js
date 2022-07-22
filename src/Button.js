@@ -9,6 +9,7 @@ export function Button({ children, onClick, type }) {
       className={classNames("btn", {
         "btn-primary": type === "primary" || type == null,
         "btn-secondary": type === "secondary",
+        "btn-transparent": type === "transparent",
       })}
     >
       {children}
