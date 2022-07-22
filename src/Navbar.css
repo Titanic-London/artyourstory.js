@@ -1,6 +1,15 @@
 
 .navbar {
   background-color: var(--brand-color);
-  padding: var(--spacing-m);
+  padding-top: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
+  padding-left: var(--spacing-m);
   color: white;
+  display: grid;
+  grid-template-columns: auto min-content min-content;
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
 }
