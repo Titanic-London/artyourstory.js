@@ -9,6 +9,10 @@ html, body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --brand-color: #525E75;
   --spacing-s: 8px;
