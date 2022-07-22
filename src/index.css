@@ -13,4 +13,8 @@ html, body {
   --spacing-s: 8px;
   --spacing-m: 12px;
   --spacing-l: 16px;
+  --text-color-primary: #000;
+  --text-color-secondary: #525E75;
+  --text-color-subtle: #DDDDDD;
+  --text-color-light: #fff;
 }
