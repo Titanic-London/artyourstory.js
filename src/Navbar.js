@@ -4,7 +4,9 @@ import "./Navbar.css";
 export function Navbar() {
   return (
     <header className="navbar">
-      <Text size="l">AYS</Text>
+      <Text size="l" bold={true} color="light">
+        AYS
+      </Text>
     </header>
   );
 }
