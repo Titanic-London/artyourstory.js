@@ -61,7 +61,6 @@ export function HomeRoute() {
           Click me
         </Button>
         <Button type="primary">Primary button</Button>
-        <Button type="secondary">Secondary button</Button>
         <Button type="transparent">Transparent button</Button>
       </Card>
     </>

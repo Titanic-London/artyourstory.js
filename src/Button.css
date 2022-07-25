@@ -13,7 +13,7 @@
   transform: scale(1.025);
 }
 
-.btn-primary {
+.btn-subtle {
   color: var(--primary-color);
   background-color: var(--subtle-color);
 }

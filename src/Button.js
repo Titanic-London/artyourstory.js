@@ -7,7 +7,7 @@ export function Button({ children, onClick, type }) {
     <button
       onClick={onClick}
       className={classNames("btn", {
-        "btn-primary": type === "primary" || type == null,
+        "btn-subtle": type === "subtle" || type == null,
         "btn-secondary": type === "secondary",
         "btn-transparent": type === "transparent",
       })}
