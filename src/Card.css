@@ -1,21 +1,21 @@
 .card {
-  color: var(--text-color-primary);
+  color: var(--primary-color);
   padding: var(--spacing-m);
   border-radius: var(--border-radius);
 }
 
 .card-primary {
-  background-color: var(--brand-color);
+  background-color: var(--primary-color);
 }
 
 .card-secondary {
-  background-color: var(--background-color-secondary);
+  background-color: var(--secondary-color);
 }
 
 .card-subtle {
-  color: var(--text-color-subtle);
+  background-color: var(--subtle-color);
 }
 
 .card-light {
-  color: var(--text-color-light);
+  background-color: var(--light-color);
 }
