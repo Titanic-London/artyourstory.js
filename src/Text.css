@@ -18,18 +18,18 @@
   font-weight: bold;
 }
 
-.text-color-primary {
-  color: var(--text-color-primary);
+.primary-color {
+  color: var(--primary-color);
 }
 
-.text-color-secondary {
-  color: var(--text-color-secondary);
+.secondary-color {
+  color: var(--secondary-color);
 }
 
-.text-color-subtle {
-  color: var(--text-color-subtle);
+.subtle-color {
+  color: var(--subtle-color);
 }
 
 .text-color-light {
-  color: var(--text-color-light);
+  color: var(--light-color);
 }

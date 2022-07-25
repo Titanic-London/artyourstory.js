@@ -14,15 +14,15 @@
 }
 
 .btn-primary {
-  color: var(--text-color-light);
-  background-color: var(--brand-color);
+  color: var(--primary-color);
+  background-color: var(--subtle-color);
 }
 
 .btn-secondary {
-  color: var(--text-color-primary);
-  background-color: var(--background-color-secondary);
+  color: var(--light-color);
+  background-color: var(--secondary-color);
 }
 
 .btn-transparent {
-  color: var(--text-color-primary);
+  color: var(--primary-color);
 }

@@ -49,7 +49,7 @@ function App() {
       {users.map((user) => {
         return <div key={user.username}>{user.username}</div>;
       })}
-      <Card color="secondary">
+      <Card color="light">
         <Button
           onClick={() => {
             writeUserData(
@@ -62,11 +62,11 @@ function App() {
         >
           Click me
         </Button>
-      </Card>
 
-      <Button type="primary">Primary button</Button>
-      <Button type="secondary">Secondary button</Button>
-      <Button type="transparent">Transparent button</Button>
+        <Button type="primary">Primary button</Button>
+        <Button type="secondary">Secondary button</Button>
+        <Button type="transparent">Transparent button</Button>
+      </Card>
     </div>
   );
 }

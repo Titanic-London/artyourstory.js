@@ -9,10 +9,10 @@ export function Text({ children, size, bold, color }) {
         "text-m": size === "m" || size == null,
         "text-l": size === "l",
         "text-bold": bold === true,
-        "text-color-primary": color === "primary" || color == null,
-        "text-color-secondary": color === "secondary",
-        "text-color-subtle": color === "subtle",
-        "text-color-light": color === "light",
+        "primary-color": color === "primary" || color == null,
+        "secondary-color": color === "secondary",
+        "subtle-color": color === "subtle",
+        "light-color": color === "light",
       })}
     >
       {children}

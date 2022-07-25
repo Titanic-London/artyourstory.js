@@ -15,15 +15,12 @@ a {
 }
 
 :root {
-  --brand-color: #525E75;
   --spacing-s: 8px;
   --spacing-m: 12px;
   --spacing-l: 16px;
-  --text-color-primary: #000;
-  --text-color-secondary: #525E75;
-  --text-color-subtle: #DDDDDD;
-  --text-color-light: #fff;
+  --secondary-color: #525E75;
+  --primary-color: #000;
+  --subtle-color: #DDDDDD;
+  --light-color: #fff;
   --border-radius: 4px;
-  --background-color-primary: #fff;
-  --background-color-secondary: #DDDDDD;
 }
