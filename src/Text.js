@@ -1,5 +1,4 @@
 import classNames from "classnames";
-
 import "./Text.css";
 
 export function Text({ children, size, bold, color }) {

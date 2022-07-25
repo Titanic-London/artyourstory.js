@@ -1,5 +1,4 @@
 import { faHeart, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
-
 import { Text } from "./Text";
 import { Icon } from "./Icon";
 import "./Navbar.css";

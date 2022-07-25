@@ -3,6 +3,7 @@ import { getDatabase, ref, set, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import { Button } from "./Button";
+import { Card } from "./Card";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -43,24 +44,26 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <p>Dorothy, Saki and Jack! Can you see this?</p>
+      <p>Dorothy and Saki! Can you see this?</p>
 
       {users.map((user) => {
         return <div key={user.username}>{user.username}</div>;
       })}
+      <Card color="secondary">
+        <Button
+          onClick={() => {
+            writeUserData(
+              Math.floor(Math.random() * 100),
+              Math.floor(Math.random() * 100),
+              "borama@borama.bor",
+              null
+            );
+          }}
+        >
+          Click me
+        </Button>
+      </Card>
 
-      <Button
-        onClick={() => {
-          writeUserData(
-            Math.floor(Math.random() * 100),
-            Math.floor(Math.random() * 100),
-            "borama@borama.bor",
-            null
-          );
-        }}
-      >
-        Click me
-      </Button>
       <Button type="primary">Primary button</Button>
       <Button type="secondary">Secondary button</Button>
       <Button type="transparent">Transparent button</Button>
