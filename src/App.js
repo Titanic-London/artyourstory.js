@@ -8,7 +8,7 @@ function App() {
   const [route, setRoute] = useState("home");
 
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Button
         onClick={() => {
@@ -26,7 +26,7 @@ function App() {
       </Button>
       {route === "home" ? <HomeRoute /> : null}
       {route === "artists" ? <ArtistsRoute /> : null}
-    </div>
+    </>
   );
 }
 
