@@ -1,13 +1,28 @@
 .artists-root {
   display: flex;
+  flex-grow: 1;
+  padding: var(--spacing-l);
+  gap: var(--spacing-l)
 }
 
 .artists-root-main {
   display: flex;
   flex-direction: column;
-
+  flex-grow: 2;
 }
+
+.artists-root-main-card {
+  /* height: 100px; */
+}
+
 .artists-root-side {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.artists-root-side-card {
+  height: 100px;
   display: flex;
   flex-direction: column;
 }
