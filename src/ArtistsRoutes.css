@@ -1,0 +1,13 @@
+.artists-root {
+  display: flex;
+}
+
+.artists-root-main {
+  display: flex;
+  flex-direction: column;
+
+}
+.artists-root-side {
+  display: flex;
+  flex-direction: column;
+}
