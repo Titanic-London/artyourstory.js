@@ -4,7 +4,7 @@ import { Icon } from "./Icon";
 import "./Navbar.css";
 import { Button } from "./Button";
 
-export function Navbar() {
+export function Navbar({ user }) {
   return (
     <header className="navbar">
       <div className="navbar-title">
@@ -18,6 +18,9 @@ export function Navbar() {
       <Button>
         <Icon color="light" icon={faBasketShopping} />
       </Button>
+      {user != null ? (
+        <img src={user.photoURL} height={100} width={100} />
+      ) : null}
     </header>
   );
 }
