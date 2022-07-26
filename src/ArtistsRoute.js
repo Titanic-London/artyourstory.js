@@ -17,8 +17,33 @@ export function ArtistsRoute() {
         <Card className="artists-root-side-card" color="secondary">
           Reviews
         </Card>
-        <Card color="secondary">
+        <Card className="artists-root-side-card" color="secondary">
           Add Artworks
+          <form action="" method="get" class="form-add-art">
+            <div className="form-add-art">
+              <label for="name">Title </label>
+              <br></br>
+              <input type="text" name="name" id="name" required></input>
+            </div>
+            <div className="form-add-art">
+              <label for="name">Date </label>
+              <br></br>
+              <input type="text" name="name" id="name" required></input>
+            </div>
+            <div className="form-add-art">
+              <label for="name">Material </label>
+              <br></br>
+              <input type="text" name="name" id="name" required></input>
+            </div>
+            <div className="form-add-art">
+              <label for="name">Size </label>
+              <br></br>
+              <input type="text" name="name" id="name" required></input>
+            </div>
+            <div className="form-add-art">
+              <input type="submit" value="Subscribe!"></input>
+            </div>
+          </form>
           <Button type="subtle">Add</Button>
         </Card>
       </div>
