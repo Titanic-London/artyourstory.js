@@ -44,6 +44,7 @@ label {
   padding-right: 10px;
 }
 
-#sname {
+#name {
   background-color: var(--light-color);
+  border-radius: 2px;
 }
