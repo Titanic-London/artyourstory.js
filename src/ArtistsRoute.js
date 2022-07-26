@@ -40,11 +40,8 @@ export function ArtistsRoute() {
               <br></br>
               <input type="text" name="name" id="name" required></input>
             </div>
-            <div className="form-add-art">
-              <input type="submit" value="Subscribe!"></input>
-            </div>
+            <Button type="subtle">Add</Button>
           </form>
-          <Button type="subtle">Add</Button>
         </Card>
       </div>
     </div>
