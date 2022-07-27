@@ -1,15 +1,24 @@
 
 .navbar {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   padding-top: var(--spacing-m);
   padding-bottom: var(--spacing-m);
   padding-left: var(--spacing-m);
-  color: white;
+  color: var(--light-color);
   display: grid;
-  grid-template-columns: auto min-content min-content;
+  grid-template-columns: auto min-content min-content min-content;
 }
 
 .navbar-title {
   display: flex;
   align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding-right: 10px;
 }
