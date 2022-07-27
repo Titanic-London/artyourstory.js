@@ -54,6 +54,9 @@ export function Navbar({ user }) {
                 <a href="">Dash Board</a>
               </li>
               <li>
+                <a href="">Favourite</a>
+              </li>
+              <li>
                 <a href="">Profile</a>
               </li>
               <li>

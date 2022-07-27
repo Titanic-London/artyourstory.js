@@ -4,7 +4,6 @@
   border: none;
   background: none;
   font-family: 'Rubik', sans-serif;
-  color: var(--primary-color)
 }
 
 html, body, #root {
@@ -19,6 +18,10 @@ html, body, #root {
 
 a {
   text-decoration: none;
+}
+
+input {
+  color: var(--primary-color);
 }
 
 :root {

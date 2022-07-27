@@ -20,8 +20,6 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  margin-right: var(--spacing-m);
-  margin-left: var(--spacing-m);
 }
 
 .dropdown_list {
