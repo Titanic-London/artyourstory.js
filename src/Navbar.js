@@ -38,7 +38,7 @@ export function Navbar({ user }) {
           ) : null}
         </Button>
 
-        <div id="courses_id" class="courses">
+        {/* <div id="courses_id" class="courses">
           <li>
             <a href="">Dash Board</a>
           </li>
@@ -48,7 +48,7 @@ export function Navbar({ user }) {
           <li>
             <a href="">Logout</a>
           </li>
-        </div>
+        </div> */}
       </div>
       {/* <script>
         function show_list() {
