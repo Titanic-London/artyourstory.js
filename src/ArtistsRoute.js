@@ -60,6 +60,9 @@ export function ArtistsRoute() {
                 <input type="text" placeholder="depth" required></input>cm
               </div>
             </div>
+            <div>
+              <input type="file" id="myFile" name="filename"></input>
+            </div>
             <Button type="subtle">Add</Button>
           </form>
         </Card>
