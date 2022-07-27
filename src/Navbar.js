@@ -1,6 +1,7 @@
 import {
   faMagnifyingGlass,
   faBasketShopping,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import { Text } from "./Text";
 import { Icon } from "./Icon";
@@ -20,6 +21,9 @@ export function Navbar({ user }) {
       </Button>
       <Button>
         <Icon color="secondary" size="l" icon={faBasketShopping} />
+      </Button>
+      <Button>
+        <Icon color="secondary" size="l" icon={faHeart} />
       </Button>
 
       <div class="dropdown_list">
