@@ -1,8 +1,11 @@
 import { Button } from "./Button";
 import { Card } from "./Card";
+import { Text } from "./Text";
 import "./ArtistsRoutes.css";
+import { useState } from "react";
 
 export function ArtistsRoute() {
+  const [title, setTitle] = useState("");
   return (
     <div className="artists-root">
       <div className="artists-root-main">
@@ -15,30 +18,47 @@ export function ArtistsRoute() {
       </div>
       <div className="artists-root-side">
         <Card className="artists-root-side-card" color="secondary">
-          Reviews
+          <Text color="light" size="l">
+            Reviews
+          </Text>
         </Card>
         <Card className="artists-root-side-card" color="secondary">
-          Add Artworks
-          <form action="" method="get" class="form-add-art">
-            <div className="form-add-art">
-              <label for="name">Title </label>
-              <br></br>
-              <input type="text" name="name" id="name" required></input>
+          <Text color="light" size="l">
+            Add Artworks
+          </Text>
+          <form
+            action=""
+            method="get"
+            class="artists-add-art-root"
+            onSubmit={(e) => {
+              debugger;
+            }}
+          >
+            <div className="artists-add-art-row">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                placeholder="title"
+                required
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+              ></input>
             </div>
-            <div className="form-add-art">
-              <label for="name">Date </label>
-              <br></br>
-              <input type="text" name="name" id="name" required></input>
+            <div className="artists-add-art-row">
+              <label for="date">Date</label>
+              <input type="text" placeholder="date" required></input>
             </div>
-            <div className="form-add-art">
-              <label for="name">Material </label>
-              <br></br>
-              <input type="text" name="name" id="name" required></input>
+            <div className="artists-add-art-row">
+              <label for="material">Material </label>
+              <input type="text" placeholder="material" required></input>
             </div>
-            <div className="form-add-art">
-              <label for="name">Size </label>
-              <br></br>
-              <input type="text" name="name" id="name" required></input>
+            <div className="artists-add-art-row">
+              <label for="size">Size</label>
+              <div className="artists-add-art-size-row">
+                <input type="text" placeholder="height" required></input>x
+                <input type="text" placeholder="width" required></input>x
+                <input type="text" placeholder="depth" required></input>cm
+              </div>
             </div>
             <Button type="subtle">Add</Button>
           </form>
