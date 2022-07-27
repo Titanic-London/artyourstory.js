@@ -8,7 +8,7 @@
 .artists-root-main {
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
+  flex-grow: 3;
 }
 
 .artists-root-main-card {
@@ -27,24 +27,34 @@
   flex-direction: column;
 }
 
-form.form-add-art {
-  display: table;
+.artists-add-art-root {
+  display: flex;
+  flex-direction: column;
 }
 
-div.form-add-art {
+.artists-add-art-row {
   display: table-row;
+  padding-top: var(--spacing-l);
 }
 
-label, input {
-  display: table-cell;
-  margin-bottom: 10px;
+.artists-add-art-size-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-s);
 }
 
 label {
-  padding-right: 10px;
+  text-align: center;
 }
 
-#name {
+input {
+  width: 100%;
+  display: inline-block;
+  padding: var(--spacing-s);
+  margin: var(--spacing-s) 0;
+  border: 1px solid var(--subtle-color);
   background-color: var(--light-color);
   border-radius: 2px;
+  box-sizing: border-box;
 }
