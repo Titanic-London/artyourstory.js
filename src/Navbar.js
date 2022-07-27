@@ -8,18 +8,18 @@ export function Navbar({ user }) {
   return (
     <header className="navbar">
       <div className="navbar-title">
-        <Text size="l" bold={true} color="light">
-          AYS
+        <Text size="l" bold={true} color="subtle">
+          ArtYourStory
         </Text>
       </div>
       <Button>
-        <Icon color="light" icon={faHeart} />
+        <Icon color="subtle" icon={faHeart} />
       </Button>
       <Button>
-        <Icon color="light" icon={faBasketShopping} />
+        <Icon color="subtle" icon={faBasketShopping} />
       </Button>
       {user != null ? (
-        <img src={user.photoURL} height={100} width={100} />
+        <img src={user.photoURL} alt="user profile" className="user-profile" />
       ) : null}
     </header>
   );
