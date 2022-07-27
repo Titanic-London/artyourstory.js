@@ -6,7 +6,7 @@
   padding-left: var(--spacing-m);
   color: var(--light-color);
   display: grid;
-  grid-template-columns: auto min-content min-content min-content;
+  grid-template-columns: auto min-content min-content min-content min-content;
 }
 
 .navbar-title {
@@ -24,22 +24,32 @@
   margin-left: var(--spacing-m);
 }
 
+.dropdown_list {
+  position: relative;
+}
+
 .courses {
   /* display: none; */
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 200px;
+  right: 0;
+  top: var(--spacing-m);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  background-color: var(--light-color);
 }
 
 .courses li {
-  color: black;
+  color: var(--secondary-color);
   display: block;
   list-style: none;
+  border: 1px solid var(--secondary-color);
+}
+
+.courses li:hover {
+  background-color:var(--light-color);
 }
 
 .courses li a {
-  color: black;
+  color: var(--secondary-color);
   display: block;
 }

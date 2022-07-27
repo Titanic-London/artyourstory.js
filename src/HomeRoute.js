@@ -29,7 +29,6 @@ export function HomeRoute() {
 
   return (
     <>
-      <p>Dorothy and Saki! Can you see this?</p>;
       <div id="firebaseui-auth-container" />
       {users.map((user) => {
         return <div key={user.username}>{user.username}</div>;
