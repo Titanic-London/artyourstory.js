@@ -6,6 +6,7 @@ import { Navbar } from "./Navbar";
 import { loginWithGoogle } from "./Authentication";
 
 function App() {
+
   const [route, setRoute] = useState("home");
   const [user, setUser] = useState(null);
 
