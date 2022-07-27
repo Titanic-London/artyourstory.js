@@ -16,6 +16,7 @@ export function Navbar({ user }) {
           ArtYourStory
         </Text>
       </div>
+
       <Button>
         <Icon color="secondary" size="l" icon={faMagnifyingGlass} />
       </Button>
