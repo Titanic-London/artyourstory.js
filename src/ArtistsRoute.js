@@ -6,6 +6,8 @@ import { useState } from "react";
 
 export function ArtistsRoute() {
   const [title, setTitle] = useState("");
+  const [selectedFile, setSelectedFile] = useState(null);
+
   return (
     <div className="artists-root">
       <div className="artists-root-main">
@@ -29,13 +31,13 @@ export function ArtistsRoute() {
           <form
             action=""
             method="get"
-            class="artists-add-art-root"
+            className="artists-add-art-root"
             onSubmit={(e) => {
               debugger;
             }}
           >
             <div className="artists-add-art-row">
-              <label for="title">Title</label>
+              <label htmlFor="title">Title</label>
               <input
                 type="text"
                 placeholder="title"
@@ -45,15 +47,15 @@ export function ArtistsRoute() {
               ></input>
             </div>
             <div className="artists-add-art-row">
-              <label for="date">Date</label>
+              <label htmlFor="date">Date</label>
               <input type="text" placeholder="date" required></input>
             </div>
             <div className="artists-add-art-row">
-              <label for="material">Material </label>
+              <label htmlFor="material">Material </label>
               <input type="text" placeholder="material" required></input>
             </div>
             <div className="artists-add-art-row">
-              <label for="size">Size</label>
+              <label htmlFor="size">Size</label>
               <div className="artists-add-art-size-row">
                 <input type="text" placeholder="height" required></input>x
                 <input type="text" placeholder="width" required></input>x
@@ -61,7 +63,12 @@ export function ArtistsRoute() {
               </div>
             </div>
             <div>
-              <input type="file" id="myFile" name="filename"></input>
+              <input
+                type="file"
+                onChange={(e) => {
+                  setSelectedFile(e.target.files[0]);
+                }}
+              />
             </div>
             <Button type="subtle">Add</Button>
           </form>
