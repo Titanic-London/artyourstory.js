@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  flex-grow: 1;
+  padding: var(--spacing-l);
+  gap: var(--spacing-l)
+
+}
+.image:hover{
+  transform: scale(1.05);
+}
+
+.image:hover:active {
+  transform: scale(1.025);
+}
+
+.right{
+  margin-left: var(--spacing-l);
+
+}
+.price{
+  margin-bottom: var(--spacing-l);
+}
