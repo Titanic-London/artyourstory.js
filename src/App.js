@@ -4,6 +4,7 @@ import { Button } from "./Button";
 import { HomeRoute } from "./HomeRoute";
 import { Navbar } from "./Navbar";
 import { loginWithGoogle } from "./Authentication";
+import { ShowPage } from "./ShowPage";
 
 function App() {
 
@@ -29,6 +30,13 @@ function App() {
       >
         See artists
       </Button>
+      <Button
+        onClick={() => {
+          setRoute("showpage");
+        }}
+      >
+        Show Page
+      </Button>
       {user == null ? (
         <Button onClick={() => loginWithGoogle(setUser)}>
           Login with Google
@@ -36,6 +44,7 @@ function App() {
       ) : null}
       {route === "home" ? <HomeRoute /> : null}
       {route === "artists" ? <ArtistsRoute /> : null}
+      {route === "showpage" ? <ShowPage /> : null}
     </>
   );
 }
